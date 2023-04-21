@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Determine if a random is positive, negative or zero.
+ * main - Prints if number is positive, negative or zero.
  *
  * Return: Always 0 (Success)
  */
@@ -29,4 +29,5 @@ int main(void)
 	}
 	return (0);
 }
+
 
