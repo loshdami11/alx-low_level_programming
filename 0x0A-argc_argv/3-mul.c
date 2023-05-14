@@ -1,30 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-/**
-* main - multiplies two numbers.
-* @argc: argument count
-* @argv: arguments
-*
-* Return: 0
-*/
-int main(int argc, char **argv)
+/***
+ * main -> this is a function to print its name
+ * @argc: argc parameter
+ * @agrv: an array of a command listed
+ * Return: 0 for success
+ */
+int main(int argc, char *argv[])
 {
-int x, y;
-
-
-if (argc < 3)
+int result, num1, num2;
+if (argc != 3)
 {
-printf("Error\n");
+printf("%s\n", "Error");
 return (1);
 }
-
-
-x = atoi(argv[1]);
-y = atoi(argv[2]);
-printf("%d\n", x * y);
-
-
+num1 = atoi(argv[1]);
+num2 = atoi(argv[2]);
+result = num1 *num2;
+printf("%d\n", result);
 return (0);
 }
